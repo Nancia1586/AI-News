@@ -1,5 +1,5 @@
 <html>
-    <table width="800" border="1">
+    <table width="800">
         <tr>
             <th>Date</th>
             <th>Titre</th>
