@@ -13,7 +13,7 @@ class AuteurController extends Controller
         return view('back_office.login');
     }
 
-    public function traitementlogin()
+    public function traitementlogin(Request $request)
     {
         $email = request('email');
         $mdp = request('mdp');
@@ -25,6 +25,7 @@ class AuteurController extends Controller
             ]);
         }
         // Session::put('idauteur', $idauteur);
+        $request->session()->put('idauteur', $idauteur);
         return redirect('/information/list');
     }
 

@@ -39,7 +39,7 @@ class InfoController extends Controller
         $info->titre = request('titre');
         $info->resume = request('resume');
         $info->contenu = request('contenu');
-        $info->auteurid = Session::get('idauteur');
+        $info->auteurid = $request->session()->get('idauteur');
         $info->save();
         return redirect('/information/create-form');
     }
