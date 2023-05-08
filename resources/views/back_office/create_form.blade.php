@@ -225,6 +225,7 @@
                         <h5>Ajout d'un nouvel article</h5>
                         <!-- Contact Form -->
                         <form action="/information/create" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="col-12">
                                     <div class="group">
