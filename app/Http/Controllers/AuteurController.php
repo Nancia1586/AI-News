@@ -24,7 +24,7 @@ class AuteurController extends Controller
                 'error' => 'Email ou mot de passe incorrect'
             ]);
         }
-        Session::put('idauteur', $idauteur);
+        // Session::put('idauteur', $idauteur);
         return redirect('/information/list');
     }
 
