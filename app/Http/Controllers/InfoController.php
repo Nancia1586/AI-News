@@ -17,6 +17,14 @@ class InfoController extends Controller
         ]);
     }
 
+    public function back_office_detail(Request $request)
+    {
+        $info = Info::detail(request('id'));
+        return view('back_office.detail',[
+            'info' => $info
+        ]);
+    }
+
     public function createform(Request $request)
     {
         $categorie = Categorie::all();

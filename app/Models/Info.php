@@ -33,6 +33,11 @@ class Info extends Model
 
     public static function liste(){
         $tab = Info::fromQuery("select i.*,c.categorie,a.nom,a.email from info i join auteur a on i.auteurid = a.id join categorie c on i.categorieid = c.id");
+        return $tab[0];
+    }
+
+    public static function detail($id){
+        $tab = Info::fromQuery("select i.*,c.categorie,a.nom,a.email from info i join auteur a on i.auteurid = a.id join categorie c on i.categorieid = c.id where id = ".$id);
         return $tab;
     }
 

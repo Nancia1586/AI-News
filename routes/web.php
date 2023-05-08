@@ -42,6 +42,7 @@ Route::post('/auteur/traitement-login', [AuteurController::class, 'traitementlog
 Route::get('/information/create-form', [InfoController::class, 'createform']);
 Route::post('/information/create', [InfoController::class, 'create']);
 Route::get('/information/list', [InfoController::class, 'back_office_list']);
+Route::get('/information/details', [InfoController::class, 'back_office_detail']);
 
 Route::get('/information/update-form', [InfoController::class, 'updateform']);
 Route::get('/information/update', [InfoController::class, 'update']);
