@@ -224,7 +224,7 @@
                     <div class="contact-form">
                         <h5>Ajout d'un nouvel article</h5>
                         <!-- Contact Form -->
-                        <form action="/information/create" method="post">
+                        <form action="/information/create" enctype="multipart/form-data" method="post">
                             @csrf
                             <div class="row">
                                 <div class="col-12">
