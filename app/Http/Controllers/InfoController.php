@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Session;
 
 class InfoController extends Controller
 {
-    public function back_office_list()
+    public function back_office_list(Request $request)
     {
         $info = Info::liste();
         return view('back_office.liste',[
@@ -17,7 +17,7 @@ class InfoController extends Controller
         ]);
     }
 
-    public function createform()
+    public function createform(Request $request)
     {
         $categorie = Categorie::all();
         return view('back_office.create_form',[
@@ -44,7 +44,7 @@ class InfoController extends Controller
         return redirect('/information/create-form');
     }
 
-    public function updateform()
+    public function updateform(Request $request)
     {
         $id = request('id');
         $info = Info::get($id);
@@ -68,7 +68,7 @@ class InfoController extends Controller
         // return redirect('/information/create-form');
     }
 
-    public function delete()
+    public function delete(Request $request)
     {
         $id = request('id');
         $info = new Info();
