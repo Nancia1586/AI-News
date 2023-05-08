@@ -6,10 +6,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Tout sur l'intelligence artificielle">
+    <meta name="description" content="Informations sur les tendances et innovations de l'intelligence artificielle">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 	<meta name="keywords" content="photo, html">
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
@@ -166,7 +167,7 @@
                         </div>
                     </div>
                     <?php } ?>
-                    <?php echo $info->links(); ?>
+
 
                 </div>
             </div>
