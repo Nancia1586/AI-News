@@ -25,7 +25,7 @@ class AuteurController extends Controller
             ]);
         }
         Session::put('idauteur', $idauteur);
-        return redirect('/information/create-form');
+        return redirect('/information/list');
     }
 
     public function home(){

@@ -19,7 +19,7 @@ use App\Http\Controllers\AuteurController;
 */
 
 Route::get('/', function () {
-    return redirect('/articial-intelligence-news/actu');
+    return redirect('/intelligence-artificielle-news/sign-in');
 });
 
 // Route::get('admin/login', function () {

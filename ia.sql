@@ -14,7 +14,7 @@ CREATE TABLE categorie(
 );
 INSERT INTO Categorie(categorie)
 VALUES
-    ('Actualites et evenements'),
+    ('Actualités et évènements'),
     ('Educations et formations'),
     ('Tendances et innovations'),
     ('Conseils pratiques');
