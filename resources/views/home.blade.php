@@ -13,7 +13,7 @@ Ajouter un article
 <div class="row">
 <div class="containera">
   <div class="box1"></div>
-  <div class="box2">  
+  <div class="box2">
  <h1>Ajouter un article</h1>
     <form  action="articles/create" enctype="multipart/form-data" method="POST">
       @csrf
@@ -26,7 +26,7 @@ Ajouter un article
           <input type="text" name="resume" class="form-control" id="exampleInputName1" placeholder="resume">
         </div>
         <div class="form-group">
-        
+
           <input type="file" name="image" class="form-control" id="exampleInputName1" placeholder="resume">
 
         </div>
@@ -34,9 +34,9 @@ Ajouter un article
           <label >categorie</label>
 
           <select class="form-control" name="categorie">
-            <?php 
+            <?php
               foreach ($categorie as $key) {
-?> 
+?>
  <option value="<?php echo $key->id?>"><?php echo $key->nom?></option><?php
               }
               ?>
@@ -48,7 +48,7 @@ Ajouter un article
 
         </div>
     <br/>
-    <input type="submit" value="AJOUTER"> 
+    <input type="submit" value="AJOUTER">
         <button type="submit" class="btn btn-primary mr-2">Submit</button>
         <button class="btn btn-light">Cancel</button>
       </form>
@@ -58,7 +58,7 @@ Ajouter un article
 </div>
 </div>
 <p>
- 
+
 @include('message')
 </p>
 </body>
