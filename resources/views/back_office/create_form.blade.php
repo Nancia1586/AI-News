@@ -228,7 +228,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="group">
-                                        <input type="date" name="date" id="name">
+                                        <input type="date" name="date" id="name" class="form-group">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Date</label>
@@ -237,7 +237,7 @@
                                 <div class="col-12">
                                     <label>Categorie</label>
                                     <div class="group">
-                                        <select name="categorie" id="email">
+                                        <select name="categorie" id="email" class="form-group">
                                             <?php foreach($categorie as $key){ ?>
                                             <option value="<?php echo $key['id']; ?>"><?php echo $key['categorie']; ?></option>
                                             <?php } ?>
@@ -248,7 +248,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="group">
-                                        <input type="text" name="titre" id="subject" required>
+                                        <input type="text" name="titre" id="subject" class="form-group" required>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Titre</label>
@@ -256,7 +256,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="group">
-                                        <textarea name="resume" id="message" required></textarea>
+                                        <textarea name="resume" id="message" class="form-group" required></textarea>
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Résumé</label>
@@ -272,7 +272,7 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="group">
-                                        <input type="file" name="image">
+                                        <input type="file" name="image" class="form-group">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label>Image</label>
